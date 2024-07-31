@@ -19,6 +19,7 @@ a{
 
 p{
     color: #ccc;
+    font-size: 19px;
 }
 
 img{
@@ -197,7 +198,8 @@ nav .login a{
 
 .showcase .text-sec p{
     width: 50%;
-    text-align: justify;
+    text-align: center;
+    font-size: 20px;
 }
 
 .showcase .text-sec .images,
@@ -697,7 +699,7 @@ footer .copyright{
     }
 
     p {
-        font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+        font-size: 16px; /* Ajusta o tamanho da fonte do parágrafo para 16px */
     }
 }
 
@@ -770,3 +772,10 @@ footer .copyright{
   .hidden {
     display: none;
   }
+
+  .navbar-menu {
+    display: none;
+}
+.navbar-menu.active {
+    display: block;
+}
