@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@1.6.2/dist/flowbite.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="moviment.js"></script>
+    <title>Programação descomplicada</title>
+</head>
+
+<body>
+
+    <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button -->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                <span class="sr-only">Open main menu</span>
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="menu-open-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="menu-close-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <!-- Name displayed next to the toggle button when the menu is closed -->
+              <span id="mobile-name" class="text-xl font-bold text-white ml-4 hidden">Felipe Brito</span>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <!-- Removed the logo image -->
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4 items-center">
+                  <a href="inicio#" class="text-4xl font-bold text-white mr-6">Felipe Brito</a>
+                  <a href="#inicio" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Início</a>
+                  <a href="#sobre" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Sobre</a>
+                  <a href="#cursos" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Cursos</a>
+                  <a href="#aprendizagem" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Aprendizagem</a>
+                  <a href="#contatos" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contatos</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <!-- Profile dropdown -->
+              <div class="relative ml-3">
+                <div>
+                  <button type="button" class="relative flex items-center rounded-full bg-gray-800 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="sr-only">Open user menu</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu" class="hidden">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a href="#inicio" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Início</a>
+            <a href="#sobre" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Sobre</a>
+            <a href="#cursos" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Cursos</a>
+            <a href="#servicos" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Serviços</a>
+            <a href="#contatos" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contatos</a>
+          </div>
+        </div>
+      </nav>
+
+      <section id="inicio" class="prompt-sec">
+        <h1 style="font-size: 36px; color: #0fd850;">PROGRAMAÇÃO DESCOMPLICADA</h1>
+        <div class="prompt-img">
+            <img src="imagem.jpg">
+            <div class="tabs">
+                <a href="#" class="active">Início</a>
+                <a href="#">Cursos</a>
+                <a href="#">Materiais</a>
+                <a href="#">Aulas</a>
+                <a href="#">Plataforma</a>
+                <a href="#">Fale comigo</a>
+            </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="cursos" class="showcase bg-dark-100 p-8">
+        <h3 style="color: #0fd850;">CURSOS</h3>
+        <div class="text-sec">
+            <p style="text-align: center;">
+              <br>Aprimore suas habilidades ou inicie sua jornada com o suporte e recursos que ofereço.
+              </p>
+                <div class="course-cards">
+                    <div class="course-card">
+                      <center>
+                        <img src="html.png" alt="HTML" class="card-icon">
+                      </center>
+                      <br>
+                        <p style="text-align: center;">Estrutura de páginas <b>web</b></p>
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Comprar 
+                          </button>
+                    </div>
+                    <div class="course-card">
+                    <center>
+                        <img src="css.png" alt="CSS" class="card-icon">
+                      </center>
+                      <br>
+                        <p style="text-align: center;">Estilize páginas com <b>CSS</b></p>
+                    
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                        Comprar 
+                      </button>
+                    </div>
+                    <div class="course-card">
+                    <center> 
+                      <img src="javascript.png" alt="JavaScript" class="card-icon">
+                      </center>
+                      <br>
+                        <p style="text-align: center;">Domine a web com <b>JavaScript</b></p>
+                        
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Comprar 
+                          </button>
+                    </div>
+                    <div class="course-card">
+                    <center>
+                        <img src="bootstrap.png" alt="BootStrap" class="card-icon">
+                      </center>
+                      <br>
+                        <p style="text-align: center;">Faça layouts com <b>BootStrap</b></p>
+                        
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Comprar 
+                          </button>
+                    </div>
+                    <div class="course-card">
+                    <center>
+                      <img src="react.png" alt="React" class="card-icon">
+                      </center>
+                      <br>
+                        <p style="text-align: center;">Interfaces com <b>React</b></p>
+                        
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Comprar 
+                          </button>
+                    </div>
+                    <div class="course-card">
+                    <center>  
+                      <img src="tailwind.png" alt="Tailwind" class="card-icon">
+                    </center>  
+                    <br>
+                      <p style="text-align: center;">Estilize com <b>Tailwind CSS</b>.</p>
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Comprar 
+                          </button>
+                    </div>
+                    <div class="course-card">
+                    <center> 
+                      <img src="git.png" alt="Git" class="card-icon">
+                      </center> 
+                      <br>
+                       <p style="text-align: center;">Gerencie código com <b>Git</b>.</p>
+                        
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Comprar 
+                          </button>
+                    </div>
+                    <div class="course-card">
+                    <center>  
+                      <img src="github.png" alt="GitHub" class="card-icon">
+                      </center>
+                      <br>  
+                      <p style="text-align: center;">Hospede projetos no <b>GitHub</b>.</p>
+                        
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Comprar 
+                          </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+        </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <div class="header">
+            <h3 style="color: #0fd850;">O que você vai aprender?</h3>
+            <br>
+            <p>
+                Desenvolva habilidades em HTML, CSS, JavaScript e frameworks modernos para criar sites e aplicações web personalizados e inovadores.
+            </p>
+        </div>
+
+        <div class="service-items">
+            <div class="item">
+                <div class="icon">
+                    <center>
+                    <img src="codigo.png" style="width: 100px;" alt="Codigo">
+                </center>
+                </div>
+                <div class="desc">
+                    <h5>Criação de Sites</h5>
+                    <p>
+                        Aprenda a criar sites do zero, desde a estrutura até a publicação.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <center>
+                    <img src="responsivo.png" style="width: 100px;" alt="Sites Responsivos">
+                </center>
+                </div>
+                <div class="desc">
+                    <h5>Sites responsivos</h5>
+                    <p> Aprenda a desenvolver sites que se adaptam a diferentes dispositivos e tamanhos de tela.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">
+                <center>
+                <img src="conhecimento.png" style="width: 100px;" alt="Conhecimento">
+                </center>
+                </div>
+                <div class="desc">
+                    <h5>Novos conhecimentos</h5>
+                    <p>Mantenha-se atualizado com as últimas tendências e tecnologias no desenvolvimento web.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">
+                <center>
+                <img src="projetos.png" style="width: 100px;" alt="Projetos">
+                </center>
+                </div>
+                <div class="desc">
+                    <h5>Projeto e aplicações</h5>
+                    <p> Aprenda a criar aplicações web interativas e dinâmicas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-sec" id="discover">
+        <div class="header">
+      
+         
+            <h3 style="color:#0fd850; text-align:center;">Como funcionam as aulas?</h3>
+
+            <br>
+            <br>
+          
+          
+        </div>
+        <br>
+        <center>
+            <div class="flex justify-center"></div>
+            <div id="accordion-collapse" data-accordion="collapse" class="w-full max-w-md">
+                <h2 id="accordion-collapse-heading-1">
+                  <button type="button" class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-2" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                    <span class="text-sm">Como funcionam as aulas online?</span>
+                    <svg data-accordion-icon class="w-2.5 h-2.5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                    </svg>
+                  </button>
+                </h2>
+                <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                  <div class="p-4 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400 text-sm">As aulas online são realizadas ao vivo via Google Meet. Cada aula tem a duração de 1 hora e 30 minutos, com sessões agendadas de acordo com a disponibilidade dos alunos.</p>
+                  </div>
+                </div>
+                <h2 id="accordion-collapse-heading-2">
+                  <button type="button" class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-2" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                    <span class="text-sm">O que será abordado nas aulas?</span>
+                    <svg data-accordion-icon class="w-2.5 h-2.5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                    </svg>
+                  </button>
+                </h2>
+                <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                  <div class="p-4 border border-b-0 border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400 text-sm">Cada aula inclui teoria, demonstrações práticas e exercícios para reforçar o aprendizado. Além disso, ofereço suporte contínuo e feedback personalizado para ajudar no seu progresso. </p>
+                  </div>
+                </div>
+                <h2 id="accordion-collapse-heading-3">
+                  <button type="button" class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-2" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                    <span class="text-sm">Como agendar as aulas?</span>
+                    <svg data-accordion-icon class="w-2.5 h-2.5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                    </svg>
+                  </button>
+                </h2>
+                <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                  <div class="p-4 border border-t-0 border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400 text-sm">Para agendar suas aulas, entre em contato comigo no WhatsApp após a compra do curso. Discutiremos juntos os horários disponíveis e organizaremos o cronograma das aulas.</p>
+                  </div>
+                </div>
+                <h2 id="accordion-collapse-heading-4">
+                    <button type="button" class="flex items-center justify-between w-full p-3 font-medium rtl:text-right text-gray-500 border border-t-0 border-gray-200 rounded-b-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-2" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
+                        <span class="text-sm">Como funciona o pagamento?</span>
+                        <svg data-accordion-icon class="w-2.5 h-2.5 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                        </svg>
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4">
+                    <div class="p-4 border border-t-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400 text-sm">O pagamento deve ser feito via Pix antes do início das aulas. <br>O custo é de R$ 40,00 para a primeira aula e R$ 25,00 para cada aula adicional.</p>
+                    </div>
+                </div>
+                <br>
+                
+                    </div>
+                </div>
+            </div>
+            </center>
+    </div>
+<br>
+<br>
+<br>
+<section id="sobre-mim" class="showcase bg-dark-100 p-8">
+    <h3 style="color:#0fd850;">Sobre Mim</h3>
+    <div class="text-sec">
+        <p>
+            Sou Felipe Brito, programador front-end especializado em React e BootStrap, com experiência em HTML, CSS, JavaScript e frameworks modernos. Trabalho na Arthais Systems, desenvolvendo projetos e ensinando programação.
+        </p>
+        <p>
+            Sempre em busca de novas tendências e aprimoramento contínuo, meu objetivo é compartilhar conhecimento e formar novos profissionais.
+        </p>
+        <p>
+            Confira meu portfólio para mais detalhes sobre meu trabalho.
+        </p>
+        <div class="button-container">
+            <a href="https://felipebritodev-felipebritosp10s-projects.vercel.app/" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
+                Ver Portfólio
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social-icon">
+    <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/profile.php?id=100005402199216">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a></li>
+   
+    <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/felipe-brito-09a355285/">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a></li>
+  </ul>
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="#">Início</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Sobre</a></li>
+    <li class="menu__item"><a class="menu__link" href="#cursos">Cursos</a></li>
+    <li class="menu__item"><a class="menu__link" href="#services">Aprendizagem</a></li>
+    <li class="menu__item"><a class="menu__link" href="#sobre-mim">Contato</a></li>
+  </ul>
+  
+    <p><ion-icon name="mail-outline"></ion-icon> <a href="mailto:felipe.fab8@gmail.com">felipe.fab8@gmail.com</a></p>
+    <p><ion-icon name="call-outline"></ion-icon> <a href="tel:+559181784689">91 8178-4689</a></p>
+  
+  <center>
+  <p>&copy;2023 Felipe Brito | Todos os direitos reservados</p><br>
+</center>
+</footer>
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
