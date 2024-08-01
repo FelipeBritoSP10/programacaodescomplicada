@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -15,61 +15,69 @@
 <body>
   <nav class="bg-gray-800">
     <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
-      <div class="relative flex items-center justify-between h-16">
-        <div class="flex items-center px-2 lg:px-0">
-          <div class="flex-shrink-0">
-            
-            <span class="text-white text-2xl font-bold">Felipe Brito</span>
-          </div>
-          <div class="hidden lg:block lg:ml-6">
-            <div class="flex space-x-4">
-              <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Início</a>
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sobre</a>
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Cursos</a>
-              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contatos</a>
+        <div class="relative flex items-center justify-between h-16">
+            <div class="flex items-center px-2 lg:px-0">
+                <div class="flex-shrink-0">
+                    <span class="text-white text-2xl font-bold">Felipe Brito</span>
+                </div>
+                <div class="hidden lg:block lg:ml-6">
+                    <div class="flex space-x-4">
+                        <a href="#inicio" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Início</a>
+                        <a href="#sobre" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Sobre</a>
+                        <a href="#cursos" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Cursos</a>
+                        <a href="#aprendizagem" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Aprendizagem</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
-          <div class="max-w-lg w-full lg:max-w-xs">
-            <label for="search" class="sr-only">Pesquisar...</label>
-            <div class="relative">
-              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                </svg>
-              </div>
-              
-              <input id="search" name="Pesquisar..." class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-700 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm" placeholder="Pesquisar..." type="search">
+            <div class="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
+                <div class="max-w-lg w-full lg:max-w-xs hidden lg:block">
+                    <label for="search" class="sr-only">Pesquisar...</label>
+                    <div class="relative">
+                        <!-- Input de pesquisa sem o ícone "X" -->
+                        <input id="search" name="Pesquisar..." class="block w-full pl-3 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-700 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm" placeholder="Pesquisar..." type="search">
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="flex lg:hidden">
+                <button type="button" id="menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Abrir menu principal</span>
+                    <svg id="menu-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    </button>
+            </div>
         </div>
-        <div class="flex lg:hidden">
-          <button type="button" id="menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg id="menu-open" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <svg id="menu-close" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
-  
+
     <!-- Mobile menu, show/hide based on menu state. -->
     <div id="mobile-menu" class="lg:hidden hidden">
-      <div class="px-2 pt-2 pb-3 space-y-1">
-        <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Início</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Sobre</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Cursos</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Aprendizagem</a>
-      </div>
-      <div class="pt-4 pb-3 border-t border-gray-700">
-      </div>
+        <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+            <span class="text-white text-lg font-medium">Menu</span>
+            <button type="button" id="menu-close-mobile" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <svg id="menu-close-icon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="#inicio" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Início</a>
+            <a href="#sobre" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Sobre</a>
+            <a href="#cursos" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Cursos</a>
+            <a href="#aprendizagem" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Aprendizagem</a>
+            <!-- Barra de pesquisa no menu mobile -->
+            <div class="relative mt-4 px-4">
+                <label for="mobile-search" class="sr-only">Pesquisar...</label>
+                <input id="mobile-search" name="Pesquisar..." class="block w-full pl-3 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-700 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm" placeholder="Pesquisar..." type="search">
+            </div>
+        </div>
     </div>
-  </nav>
+</nav>
+
+
+  
+  
+
+
       <section id="inicio" class="prompt-sec">
         <h1 style="font-size: 36px; color: #0fd850;">PROGRAMAÇÃO DESCOMPLICADA</h1>
         <div class="prompt-img">
@@ -288,6 +296,7 @@
         </div>
     </div>
 
+    <section id="aprendizagem">
     <div class="services" id="services">
         <div class="header">
             <h3 style="color: #0fd850;">O que você vai aprender?</h3>
@@ -348,6 +357,7 @@
             </div>
         </div>
     </div>
+  </section>
 
     <div class="video-sec" id="discover">
         <div class="header">
@@ -422,7 +432,7 @@
 <br>
 <br>
 <br>
-<section id="sobre-mim" class="showcase bg-dark-100 p-8">
+<section id="sobre" class="showcase bg-dark-100 p-8">
     <h3 style="color:#0fd850;">Sobre Mim</h3>
     <div class="text-sec">
         <p>
